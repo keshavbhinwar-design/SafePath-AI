@@ -1,0 +1,38 @@
+import requests
+
+# Test location: Bangalore
+latitude = 12.97
+longitude = 77.59
+
+url = (
+    "https://api.open-meteo.com/v1/forecast"
+    f"?latitude={latitude}"
+    f"&longitude={longitude}"
+    "&hourly=temperature_2m,precipitation,relative_humidity_2m"
+    "&forecast_days=3"
+)
+
+response = requests.get(url)
+
+if response.status_code == 200:
+
+    weather = response.json()
+
+    print("================================")
+    print("      SAFEPATH AI")
+    print("   Weather API Connected")
+    print("================================")
+
+    print("Latitude:", weather["latitude"])
+    print("Longitude:", weather["longitude"])
+
+    print("\nFirst 5 rainfall readings:")
+
+    rainfall = weather["hourly"]["precipitation"]
+
+    for value in rainfall[:5]:
+        print(value, "mm")
+
+else:
+    print("Weather API connection failed.")
+    print("Status code:", response.status_code)

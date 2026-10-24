@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>SafePath AI | Landslide Risk & Safe Routing</title>
+
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- SafePath AI CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         MAIN APPLICATION
+         ===================================================== -->
+
+    <div class="container">
+
+
+        <!-- =================================================
+             HEADER
+             ================================================= -->
+
+        <header class="hero">
+
+            <div class="hero-content">
+
+                <div class="brand-mark">
+                    🛡️
+                </div>
+
+                <div>
+
+                    <h1>
+                        SafePath AI
+                    </h1>
+
+                    <p class="subtitle">
+                        AI-Powered Landslide Risk & Safe Routing
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="system-status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    System Ready
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             PROJECT INTRO
+             ================================================= -->
+
+        <section class="intro-card">
+
+            <div>
+
+                <span class="section-label">
+                    SAFETY INTELLIGENCE
+                </span>
+
+                <h2>
+                    Find a safer path through changing conditions.
+                </h2>
+
+                <p>
+                    SafePath AI combines weather, terrain,
+                    landslide-risk analysis and route information
+                    to identify potentially safer travel options.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ROUTE CONTROL
+             ================================================= -->
+
+        <section class="control-panel">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        ROUTE ANALYSIS
+                    </span>
+
+                    <h2>
+                        Find Safe Route
+                    </h2>
+
+                </div>
+
+                <span class="panel-badge">
+                    LIVE ANALYSIS
+                </span>
+
+            </div>
+
+
+            <div class="input-grid">
+
+
+                <!-- START LATITUDE -->
+
+                <div class="input-group">
+
+                    <label for="startLat">
+                        Start Latitude
+                    </label>
+
+                    <input
+                        type="number"
+                        id="startLat"
+                        value="12.35"
+                        step="any">
+
+                </div>
+
+
+                <!-- START LONGITUDE -->
+
+                <div class="input-group">
+
+                    <label for="startLon">
+                        Start Longitude
+                    </label>
+
+                    <input
+                        type="number"
+                        id="startLon"
+                        value="75.75"
+                        step="any">
+
+                </div>
+
+
+                <!-- DESTINATION LATITUDE -->
+
+                <div class="input-group">
+
+                    <label for="endLat">
+                        Destination Latitude
+                    </label>
+
+                    <input
+                        type="number"
+                        id="endLat"
+                        value="12.4244"
+                        step="any">
+
+                </div>
+
+
+                <!-- DESTINATION LONGITUDE -->
+
+                <div class="input-group">
+
+                    <label for="endLon">
+                        Destination Longitude
+                    </label>
+
+                    <input
+                        type="number"
+                        id="endLon"
+                        value="75.7382"
+                        step="any">
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="findRouteButton"
+                class="primary-button">
+
+                <span>🛣️</span>
+
+                FIND SAFE ROUTE
+
+            </button>
+
+        </section>
+
+
+        <!-- =================================================
+             WEATHER & RISK SIMULATION
+             ================================================= -->
+
+        <section class="control-panel simulation-panel">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        WHAT-IF ANALYSIS
+                    </span>
+
+                    <h2>
+                        🌧️ Weather & Risk Simulation
+                    </h2>
+
+                </div>
+
+                <span class="panel-badge simulation-badge">
+                    SIMULATION
+                </span>
+
+            </div>
+
+
+            <p class="section-description">
+
+                Change weather conditions to explore how
+                different scenarios may affect route risk.
+
+            </p>
+
+
+            <div class="input-grid">
+
+
+                <!-- CURRENT RAINFALL -->
+
+                <div class="input-group">
+
+                    <label for="simulationRainfall">
+                        Current Rainfall (mm)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="simulationRainfall"
+                        value="0"
+                        min="0"
+                        max="200"
+                        step="0.1">
+
+                </div>
+
+
+                <!-- 6 HOUR RAINFALL -->
+
+                <div class="input-group">
+
+                    <label for="simulationRainfall6h">
+                        6-Hour Rainfall (mm)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="simulationRainfall6h"
+                        value="0"
+                        min="0"
+                        max="300"
+                        step="0.1">
+
+                </div>
+
+
+                <!-- 12 HOUR RAINFALL -->
+
+                <div class="input-group">
+
+                    <label for="simulationRainfall12h">
+                        12-Hour Rainfall (mm)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="simulationRainfall12h"
+                        value="0"
+                        min="0"
+                        max="400"
+                        step="0.1">
+
+                </div>
+
+
+                <!-- 24 HOUR RAINFALL -->
+
+                <div class="input-group">
+
+                    <label for="simulationRainfall24h">
+                        24-Hour Rainfall (mm)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="simulationRainfall24h"
+                        value="0"
+                        min="0"
+                        max="500"
+                        step="0.1">
+
+                </div>
+
+
+                <!-- HUMIDITY -->
+
+                <div class="input-group">
+
+                    <label for="simulationHumidity">
+                        Humidity (%)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="simulationHumidity"
+                        value="80"
+                        min="0"
+                        max="100"
+                        step="1">
+
+                </div>
+
+
+                <!-- TEMPERATURE -->
+
+                <div class="input-group">
+
+                    <label for="simulationTemperature">
+                        Temperature (°C)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="simulationTemperature"
+                        value="24"
+                        min="-10"
+                        max="60"
+                        step="0.1">
+
+                </div>
+
+            </div>
+
+
+            <div class="button-row">
+
+                <button
+                    type="button"
+                    id="simulationButton"
+                    class="simulation-button">
+
+                    🧪 ANALYZE SIMULATION
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="resetSimulationButton"
+                    class="secondary-button">
+
+                    🔄 USE LIVE WEATHER
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MAP
+             ================================================= -->
+
+        <section class="map-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        GIS VISUALIZATION
+                    </span>
+
+                    <h2>
+                        🗺️ Risk Map
+                    </h2>
+
+                </div>
+
+                <span class="map-status">
+                    ROUTE RISK MONITORING
+                </span>
+
+            </div>
+
+
+            <div
+                id="map"
+                class="risk-map">
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ROUTE RISK
+             ================================================= -->
+
+        <section class="results">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        RISK ASSESSMENT
+                    </span>
+
+                    <h2>
+                        Route Risk
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="result-grid">
+
+
+                <!-- RISK LEVEL -->
+
+                <div class="result-card risk-card">
+
+                    <div class="card-icon">
+                        ⚠️
+                    </div>
+
+                    <h3>
+                        Risk Level
+                    </h3>
+
+                    <p id="riskLevel">
+                        —
+                    </p>
+
+                </div>
+
+
+                <!-- AVERAGE RISK -->
+
+                <div class="result-card">
+
+                    <div class="card-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Average Risk
+                    </h3>
+
+                    <p id="riskScore">
+                        —
+                    </p>
+
+                </div>
+
+
+                <!-- DISTANCE -->
+
+                <div class="result-card">
+
+                    <div class="card-icon">
+                        📍
+                    </div>
+
+                    <h3>
+                        Distance
+                    </h3>
+
+                    <p id="distance">
+                        —
+                    </p>
+
+                </div>
+
+
+                <!-- ETA -->
+
+                <div class="result-card">
+
+                    <div class="card-icon">
+                        ⏱️
+                    </div>
+
+                    <h3>
+                        ETA
+                    </h3>
+
+                    <p id="duration">
+                        —
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             TERRAIN
+             ================================================= -->
+
+        <section class="info-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        TERRAIN ANALYSIS
+                    </span>
+
+                    <h2>
+                        🏔️ Terrain Information
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-grid">
+
+
+                <div class="info-card">
+
+                    <span class="info-icon">
+                        ⛰️
+                    </span>
+
+                    <strong>
+                        Elevation
+                    </strong>
+
+                    <p id="elevation">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span class="info-icon">
+                        📐
+                    </span>
+
+                    <strong>
+                        Slope
+                    </strong>
+
+                    <p id="slope">
+                        —
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             WEATHER
+             ================================================= -->
+
+        <section class="info-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        WEATHER INTELLIGENCE
+                    </span>
+
+                    <h2>
+                        🌦️ Weather Conditions
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-grid">
+
+
+                <div class="info-card">
+
+                    <span class="info-icon">
+                        🌧️
+                    </span>
+
+                    <strong>
+                        Rainfall
+                    </strong>
+
+                    <p id="rainfall">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span class="info-icon">
+                        💧
+                    </span>
+
+                    <strong>
+                        Humidity
+                    </strong>
+
+                    <p id="humidity">
+                        —
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <span class="info-icon">
+                        🌡️
+                    </span>
+
+                    <strong>
+                        Temperature
+                    </strong>
+
+                    <p id="temperature">
+                        —
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ROUTE COMPARISON
+             ================================================= -->
+
+        <section class="info-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        ROUTE OPTIMIZATION
+                    </span>
+
+                    <h2>
+                        🛣️ Route Comparison
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="routeComparison"
+                class="route-comparison">
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        🧭
+                    </div>
+
+                    <p>
+                        Find a route to compare alternatives.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DISCLAIMER
+             ================================================= -->
+
+        <section class="disclaimer">
+
+            <div class="disclaimer-icon">
+                ⚠️
+            </div>
+
+            <div>
+
+                <strong>
+                    Prototype & Research Notice
+                </strong>
+
+                <p>
+                    SafePath AI is a research prototype.
+                    Current landslide-risk predictions are
+                    intended for demonstration and analysis
+                    and should not be treated as official
+                    emergency warnings or a substitute for
+                    local authorities and verified conditions.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             FOOTER
+             ================================================= -->
+
+        <footer>
+
+            <strong>
+                SafePath AI
+            </strong>
+
+            <span>
+                AI • GIS • Weather • Terrain • Safe Routing
+            </span>
+
+        </footer>
+
+    </div>
+
+
+    <!-- =====================================================
+         LEAFLET
+         ===================================================== -->
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+    </script>
+
+
+    <!-- =====================================================
+         SAFEPATH JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

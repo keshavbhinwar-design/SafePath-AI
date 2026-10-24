@@ -1,0 +1,2549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a6bc2eced9f6a8db2629fa0d1ee73214 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a6bc2eced9f6a8db2629fa0d1ee73214" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a6bc2eced9f6a8db2629fa0d1ee73214 = L.map(
+                "map_a6bc2eced9f6a8db2629fa0d1ee73214",
+                {
+                    center: [12.35, 75.75],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9a613e4a84bcd67fb8b6c8e526bcb8c9 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9a613e4a84bcd67fb8b6c8e526bcb8c9.addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+            var marker_345f1abb3f5a18401d4db396926fdb9f = L.marker(
+                [12.0, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_78d60c3f090e5fd4a25a5c3dafae45d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd84e2148f8b5e10a2501e642df4dc9b = $(`<div id="html_fd84e2148f8b5e10a2501e642df4dc9b" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 22.66/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 82.00%<br>         <b>🌡 Temperature:</b> 22.50 °C<br>         <b>⛰ Elevation:</b> 974.54 m<br>         <b>📐 Slope:</b> 0.25°     </div>     </div>`)[0];
+                popup_78d60c3f090e5fd4a25a5c3dafae45d0.setContent(html_fd84e2148f8b5e10a2501e642df4dc9b);
+            
+        
+
+        marker_345f1abb3f5a18401d4db396926fdb9f.bindPopup(popup_78d60c3f090e5fd4a25a5c3dafae45d0)
+        ;
+
+        
+    
+    
+            marker_345f1abb3f5a18401d4db396926fdb9f.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 22.66
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ed285c36b4543a50c2188b76b5af9766 = L.marker(
+                [12.05, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_7a327d4045b2ff78f6554cad13cf7f49 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ad7aa38091b198986399ca032cbf3feb = $(`<div id="html_ad7aa38091b198986399ca032cbf3feb" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 50.96/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 84.00%<br>         <b>🌡 Temperature:</b> 22.10 °C<br>         <b>⛰ Elevation:</b> 1550.71 m<br>         <b>📐 Slope:</b> 36.70°     </div>     </div>`)[0];
+                popup_7a327d4045b2ff78f6554cad13cf7f49.setContent(html_ad7aa38091b198986399ca032cbf3feb);
+            
+        
+
+        marker_ed285c36b4543a50c2188b76b5af9766.bindPopup(popup_7a327d4045b2ff78f6554cad13cf7f49)
+        ;
+
+        
+    
+    
+            marker_ed285c36b4543a50c2188b76b5af9766.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 50.96
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_104460c30491c794a9dcd2d90b5e716a = L.marker(
+                [12.1, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_deadf5ce63aca0f2a28e7d4200b3b491 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_060a51aeeabb7989cb711ecc3b57b2e6 = $(`<div id="html_060a51aeeabb7989cb711ecc3b57b2e6" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 45.33/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 79.00%<br>         <b>🌡 Temperature:</b> 22.90 °C<br>         <b>⛰ Elevation:</b> 1331.99 m<br>         <b>📐 Slope:</b> 31.81°     </div>     </div>`)[0];
+                popup_deadf5ce63aca0f2a28e7d4200b3b491.setContent(html_060a51aeeabb7989cb711ecc3b57b2e6);
+            
+        
+
+        marker_104460c30491c794a9dcd2d90b5e716a.bindPopup(popup_deadf5ce63aca0f2a28e7d4200b3b491)
+        ;
+
+        
+    
+    
+            marker_104460c30491c794a9dcd2d90b5e716a.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 45.33
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_231fdd8f1f6980027f71db3796f8db72 = L.marker(
+                [12.15, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_3d365090311d2de211dd44daf4a9f34f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86734c035078ce4762444ef34857d50a = $(`<div id="html_86734c035078ce4762444ef34857d50a" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 44.52/100<br><br>          <b>🌧 Rainfall:</b> 0.20 mm<br>         <b>💧 Humidity:</b> 75.00%<br>         <b>🌡 Temperature:</b> 23.90 °C<br>         <b>⛰ Elevation:</b> 1198.66 m<br>         <b>📐 Slope:</b> 32.81°     </div>     </div>`)[0];
+                popup_3d365090311d2de211dd44daf4a9f34f.setContent(html_86734c035078ce4762444ef34857d50a);
+            
+        
+
+        marker_231fdd8f1f6980027f71db3796f8db72.bindPopup(popup_3d365090311d2de211dd44daf4a9f34f)
+        ;
+
+        
+    
+    
+            marker_231fdd8f1f6980027f71db3796f8db72.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 44.52
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7b894830171adc24fed63295ea4f57e7 = L.marker(
+                [12.2, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_de28e324d2e4405c47b37fe7ebe190a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b14067483b4a9102a6bce65bc8118fa4 = $(`<div id="html_b14067483b4a9102a6bce65bc8118fa4" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 40.34/100<br><br>          <b>🌧 Rainfall:</b> 0.10 mm<br>         <b>💧 Humidity:</b> 62.00%<br>         <b>🌡 Temperature:</b> 26.30 °C<br>         <b>⛰ Elevation:</b> 756.02 m<br>         <b>📐 Slope:</b> 34.71°     </div>     </div>`)[0];
+                popup_de28e324d2e4405c47b37fe7ebe190a2.setContent(html_b14067483b4a9102a6bce65bc8118fa4);
+            
+        
+
+        marker_7b894830171adc24fed63295ea4f57e7.bindPopup(popup_de28e324d2e4405c47b37fe7ebe190a2)
+        ;
+
+        
+    
+    
+            marker_7b894830171adc24fed63295ea4f57e7.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 40.34
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_03b7d6168cc516a34246efcb020454d8 = L.marker(
+                [12.25, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_74ca5e8cb120c8748748d8f47a32e30a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66ea28a33b7b55238dc70309dadcc89d = $(`<div id="html_66ea28a33b7b55238dc70309dadcc89d" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 17.83/100<br><br>          <b>🌧 Rainfall:</b> 0.10 mm<br>         <b>💧 Humidity:</b> 54.00%<br>         <b>🌡 Temperature:</b> 27.80 °C<br>         <b>⛰ Elevation:</b> 755.99 m<br>         <b>📐 Slope:</b> 3.33°     </div>     </div>`)[0];
+                popup_74ca5e8cb120c8748748d8f47a32e30a.setContent(html_66ea28a33b7b55238dc70309dadcc89d);
+            
+        
+
+        marker_03b7d6168cc516a34246efcb020454d8.bindPopup(popup_74ca5e8cb120c8748748d8f47a32e30a)
+        ;
+
+        
+    
+    
+            marker_03b7d6168cc516a34246efcb020454d8.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 17.83
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_035aec41dc8b48e97b727fdd0da2c0f2 = L.marker(
+                [12.3, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_c578dee082f2dfd9a005900284c48c5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb62c172a1edb936af15f4eca4f3b97f = $(`<div id="html_eb62c172a1edb936af15f4eca4f3b97f" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 24.55/100<br><br>          <b>🌧 Rainfall:</b> 0.10 mm<br>         <b>💧 Humidity:</b> 48.00%<br>         <b>🌡 Temperature:</b> 29.00 °C<br>         <b>⛰ Elevation:</b> 658.08 m<br>         <b>📐 Slope:</b> 16.13°     </div>     </div>`)[0];
+                popup_c578dee082f2dfd9a005900284c48c5b.setContent(html_eb62c172a1edb936af15f4eca4f3b97f);
+            
+        
+
+        marker_035aec41dc8b48e97b727fdd0da2c0f2.bindPopup(popup_c578dee082f2dfd9a005900284c48c5b)
+        ;
+
+        
+    
+    
+            marker_035aec41dc8b48e97b727fdd0da2c0f2.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 24.55
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e7f6844fc3c51992de9add385c0fef2 = L.marker(
+                [12.35, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_cbbcfa789a6b56ba53d1e1fa53c2337b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8c95ecf02ea4712509f1638c68cad00 = $(`<div id="html_e8c95ecf02ea4712509f1638c68cad00" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 21.72/100<br><br>          <b>🌧 Rainfall:</b> 0.10 mm<br>         <b>💧 Humidity:</b> 45.00%<br>         <b>🌡 Temperature:</b> 29.80 °C<br>         <b>⛰ Elevation:</b> 1466.18 m<br>         <b>📐 Slope:</b> 5.21°     </div>     </div>`)[0];
+                popup_cbbcfa789a6b56ba53d1e1fa53c2337b.setContent(html_e8c95ecf02ea4712509f1638c68cad00);
+            
+        
+
+        marker_8e7f6844fc3c51992de9add385c0fef2.bindPopup(popup_cbbcfa789a6b56ba53d1e1fa53c2337b)
+        ;
+
+        
+    
+    
+            marker_8e7f6844fc3c51992de9add385c0fef2.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 21.72
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_545d1814e390276a8f9d18a2b2285003 = L.marker(
+                [12.4, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_7eb03873e6b7e95048554aef61f0ebce = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffe739d31016f69c907e2357ca3c8b0b = $(`<div id="html_ffe739d31016f69c907e2357ca3c8b0b" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 41.6/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 41.00%<br>         <b>🌡 Temperature:</b> 30.80 °C<br>         <b>⛰ Elevation:</b> 1201.12 m<br>         <b>📐 Slope:</b> 38.84°     </div>     </div>`)[0];
+                popup_7eb03873e6b7e95048554aef61f0ebce.setContent(html_ffe739d31016f69c907e2357ca3c8b0b);
+            
+        
+
+        marker_545d1814e390276a8f9d18a2b2285003.bindPopup(popup_7eb03873e6b7e95048554aef61f0ebce)
+        ;
+
+        
+    
+    
+            marker_545d1814e390276a8f9d18a2b2285003.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 41.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b616764ab6821f2f1c959bb389184925 = L.marker(
+                [12.45, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_6c064d7f563a8b8d893d8bee572eebca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1543b3696399aae86259588b2daa6f2 = $(`<div id="html_d1543b3696399aae86259588b2daa6f2" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 34.87/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 40.00%<br>         <b>🌡 Temperature:</b> 31.00 °C<br>         <b>⛰ Elevation:</b> 1308.07 m<br>         <b>📐 Slope:</b> 28.05°     </div>     </div>`)[0];
+                popup_6c064d7f563a8b8d893d8bee572eebca.setContent(html_d1543b3696399aae86259588b2daa6f2);
+            
+        
+
+        marker_b616764ab6821f2f1c959bb389184925.bindPopup(popup_6c064d7f563a8b8d893d8bee572eebca)
+        ;
+
+        
+    
+    
+            marker_b616764ab6821f2f1c959bb389184925.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 34.87
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_67b6583a8f4fca7f4df9fedc1e3ab8d7 = L.marker(
+                [12.5, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_c943ed93790394b503d534736130c826 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d9cea35fc27e17be17e5cb094d85c94 = $(`<div id="html_3d9cea35fc27e17be17e5cb094d85c94" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 21.81/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 40.00%<br>         <b>🌡 Temperature:</b> 30.90 °C<br>         <b>⛰ Elevation:</b> 620.58 m<br>         <b>📐 Slope:</b> 14.89°     </div>     </div>`)[0];
+                popup_c943ed93790394b503d534736130c826.setContent(html_3d9cea35fc27e17be17e5cb094d85c94);
+            
+        
+
+        marker_67b6583a8f4fca7f4df9fedc1e3ab8d7.bindPopup(popup_c943ed93790394b503d534736130c826)
+        ;
+
+        
+    
+    
+            marker_67b6583a8f4fca7f4df9fedc1e3ab8d7.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 21.81
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec0a031ab7b95affd55192ce4af15319 = L.marker(
+                [12.55, 75.5],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_d7835ffa03c9cc4a08936278e172cf51 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66dcc04e0d0f63295045ce29d4665891 = $(`<div id="html_66dcc04e0d0f63295045ce29d4665891" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 19.92/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 41.00%<br>         <b>🌡 Temperature:</b> 30.60 °C<br>         <b>⛰ Elevation:</b> 1569.91 m<br>         <b>📐 Slope:</b> 2.86°     </div>     </div>`)[0];
+                popup_d7835ffa03c9cc4a08936278e172cf51.setContent(html_66dcc04e0d0f63295045ce29d4665891);
+            
+        
+
+        marker_ec0a031ab7b95affd55192ce4af15319.bindPopup(popup_d7835ffa03c9cc4a08936278e172cf51)
+        ;
+
+        
+    
+    
+            marker_ec0a031ab7b95affd55192ce4af15319.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 19.92
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e2aeb00a5e6fd56cb769c3918339123f = L.marker(
+                [12.0, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_dc31896897225e8f5e22046723dd2761 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b631d988053e5beac47853a36693f70a = $(`<div id="html_b631d988053e5beac47853a36693f70a" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 26.88/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 43.00%<br>         <b>🌡 Temperature:</b> 29.60 °C<br>         <b>⛰ Elevation:</b> 1432.44 m<br>         <b>📐 Slope:</b> 13.99°     </div>     </div>`)[0];
+                popup_dc31896897225e8f5e22046723dd2761.setContent(html_b631d988053e5beac47853a36693f70a);
+            
+        
+
+        marker_e2aeb00a5e6fd56cb769c3918339123f.bindPopup(popup_dc31896897225e8f5e22046723dd2761)
+        ;
+
+        
+    
+    
+            marker_e2aeb00a5e6fd56cb769c3918339123f.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 26.88
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8be9f9341450db670eec38315119b29d = L.marker(
+                [12.05, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_fb2660eb5fd8bbfb80cf79fa9ce37c34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80f2ea3601b113e2733583c5dac4ae5f = $(`<div id="html_80f2ea3601b113e2733583c5dac4ae5f" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 23.83/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 45.00%<br>         <b>🌡 Temperature:</b> 28.80 °C<br>         <b>⛰ Elevation:</b> 812.34 m<br>         <b>📐 Slope:</b> 14.63°     </div>     </div>`)[0];
+                popup_fb2660eb5fd8bbfb80cf79fa9ce37c34.setContent(html_80f2ea3601b113e2733583c5dac4ae5f);
+            
+        
+
+        marker_8be9f9341450db670eec38315119b29d.bindPopup(popup_fb2660eb5fd8bbfb80cf79fa9ce37c34)
+        ;
+
+        
+    
+    
+            marker_8be9f9341450db670eec38315119b29d.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 23.83
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d0aab0d9d3415d602b03cefb7cbce8ad = L.marker(
+                [12.1, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_3e3fb43aa5b4f1ed7313e41635ff780c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_246aa3a65fd56d3c1ca4ea9113a55ccd = $(`<div id="html_246aa3a65fd56d3c1ca4ea9113a55ccd" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 35.97/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 46.00%<br>         <b>🌡 Temperature:</b> 28.30 °C<br>         <b>⛰ Elevation:</b> 781.82 m<br>         <b>📐 Slope:</b> 32.83°     </div>     </div>`)[0];
+                popup_3e3fb43aa5b4f1ed7313e41635ff780c.setContent(html_246aa3a65fd56d3c1ca4ea9113a55ccd);
+            
+        
+
+        marker_d0aab0d9d3415d602b03cefb7cbce8ad.bindPopup(popup_3e3fb43aa5b4f1ed7313e41635ff780c)
+        ;
+
+        
+    
+    
+            marker_d0aab0d9d3415d602b03cefb7cbce8ad.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 35.97
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c6f5201b5141cbc0bd55b1b0f28da55d = L.marker(
+                [12.15, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_10b740eba7568b7616038289187c3aa9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_352c5979d93f61312f5cd92ddc2ce85b = $(`<div id="html_352c5979d93f61312f5cd92ddc2ce85b" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 33.82/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 49.00%<br>         <b>🌡 Temperature:</b> 27.70 °C<br>         <b>⛰ Elevation:</b> 783.40 m<br>         <b>📐 Slope:</b> 28.69°     </div>     </div>`)[0];
+                popup_10b740eba7568b7616038289187c3aa9.setContent(html_352c5979d93f61312f5cd92ddc2ce85b);
+            
+        
+
+        marker_c6f5201b5141cbc0bd55b1b0f28da55d.bindPopup(popup_10b740eba7568b7616038289187c3aa9)
+        ;
+
+        
+    
+    
+            marker_c6f5201b5141cbc0bd55b1b0f28da55d.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 33.82
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5cab5e7f13352bf4236c96414148d6a8 = L.marker(
+                [12.2, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_03cc2d83e68bfbcfe252a1884932b9aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8bec4c0230e22abc4c56a207ee9f4ac = $(`<div id="html_d8bec4c0230e22abc4c56a207ee9f4ac" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 42.67/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 52.00%<br>         <b>🌡 Temperature:</b> 27.10 °C<br>         <b>⛰ Elevation:</b> 904.24 m<br>         <b>📐 Slope:</b> 39.92°     </div>     </div>`)[0];
+                popup_03cc2d83e68bfbcfe252a1884932b9aa.setContent(html_d8bec4c0230e22abc4c56a207ee9f4ac);
+            
+        
+
+        marker_5cab5e7f13352bf4236c96414148d6a8.bindPopup(popup_03cc2d83e68bfbcfe252a1884932b9aa)
+        ;
+
+        
+    
+    
+            marker_5cab5e7f13352bf4236c96414148d6a8.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 42.67
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d699b847a7d54f337489c5ba215edfdd = L.marker(
+                [12.25, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_339ee67a0e4d3db0944eda6a0380944b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46f9c67ae0666f3e7d0b8d2b688fcb7d = $(`<div id="html_46f9c67ae0666f3e7d0b8d2b688fcb7d" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 31.4/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 51.00%<br>         <b>🌡 Temperature:</b> 26.30 °C<br>         <b>⛰ Elevation:</b> 1124.76 m<br>         <b>📐 Slope:</b> 21.25°     </div>     </div>`)[0];
+                popup_339ee67a0e4d3db0944eda6a0380944b.setContent(html_46f9c67ae0666f3e7d0b8d2b688fcb7d);
+            
+        
+
+        marker_d699b847a7d54f337489c5ba215edfdd.bindPopup(popup_339ee67a0e4d3db0944eda6a0380944b)
+        ;
+
+        
+    
+    
+            marker_d699b847a7d54f337489c5ba215edfdd.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 31.4
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ae77d87d85312ed856702aa274288e8b = L.marker(
+                [12.3, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_ffa5fd58a543c375f255cd9a0ba7bc13 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_381bc8d03d5c538110968dd719691694 = $(`<div id="html_381bc8d03d5c538110968dd719691694" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 20.84/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 54.00%<br>         <b>🌡 Temperature:</b> 25.20 °C<br>         <b>⛰ Elevation:</b> 1031.95 m<br>         <b>📐 Slope:</b> 5.38°     </div>     </div>`)[0];
+                popup_ffa5fd58a543c375f255cd9a0ba7bc13.setContent(html_381bc8d03d5c538110968dd719691694);
+            
+        
+
+        marker_ae77d87d85312ed856702aa274288e8b.bindPopup(popup_ffa5fd58a543c375f255cd9a0ba7bc13)
+        ;
+
+        
+    
+    
+            marker_ae77d87d85312ed856702aa274288e8b.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 20.84
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff28a33527a7e0171d599e90f70b611c = L.marker(
+                [12.35, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_263284db3926ae41f28573e340f827cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_adb47487b5ae1ff9aa94c04a0f193e25 = $(`<div id="html_adb47487b5ae1ff9aa94c04a0f193e25" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 38.57/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 58.00%<br>         <b>🌡 Temperature:</b> 24.00 °C<br>         <b>⛰ Elevation:</b> 891.23 m<br>         <b>📐 Slope:</b> 32.10°     </div>     </div>`)[0];
+                popup_263284db3926ae41f28573e340f827cc.setContent(html_adb47487b5ae1ff9aa94c04a0f193e25);
+            
+        
+
+        marker_ff28a33527a7e0171d599e90f70b611c.bindPopup(popup_263284db3926ae41f28573e340f827cc)
+        ;
+
+        
+    
+    
+            marker_ff28a33527a7e0171d599e90f70b611c.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 38.57
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e7dd4fc09be6fd8f35e6868ca3d05a8 = L.marker(
+                [12.4, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_2ce8c70985c7e73a108fddc671153b74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec4dbcfd9c425ed0e700a92cad05a1be = $(`<div id="html_ec4dbcfd9c425ed0e700a92cad05a1be" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 42.6/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 61.00%<br>         <b>🌡 Temperature:</b> 23.40 °C<br>         <b>⛰ Elevation:</b> 1211.85 m<br>         <b>📐 Slope:</b> 34.24°     </div>     </div>`)[0];
+                popup_2ce8c70985c7e73a108fddc671153b74.setContent(html_ec4dbcfd9c425ed0e700a92cad05a1be);
+            
+        
+
+        marker_8e7dd4fc09be6fd8f35e6868ca3d05a8.bindPopup(popup_2ce8c70985c7e73a108fddc671153b74)
+        ;
+
+        
+    
+    
+            marker_8e7dd4fc09be6fd8f35e6868ca3d05a8.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 42.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2cb25936dab19db4a8703ea5dc9b1cdf = L.marker(
+                [12.45, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_57b9cbcc4c346090363154120ae26bcf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c74343e4717ecc7a883b529172ee0107 = $(`<div id="html_c74343e4717ecc7a883b529172ee0107" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 34.26/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 64.00%<br>         <b>🌡 Temperature:</b> 22.90 °C<br>         <b>⛰ Elevation:</b> 739.49 m<br>         <b>📐 Slope:</b> 25.26°     </div>     </div>`)[0];
+                popup_57b9cbcc4c346090363154120ae26bcf.setContent(html_c74343e4717ecc7a883b529172ee0107);
+            
+        
+
+        marker_2cb25936dab19db4a8703ea5dc9b1cdf.bindPopup(popup_57b9cbcc4c346090363154120ae26bcf)
+        ;
+
+        
+    
+    
+            marker_2cb25936dab19db4a8703ea5dc9b1cdf.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 34.26
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9c2ff93727a2a918e0412437d877c299 = L.marker(
+                [12.5, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_4231b836d6bd41679e152e6808d6ff5b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_861c298c15661f5ade3c7788a3e0ea5b = $(`<div id="html_861c298c15661f5ade3c7788a3e0ea5b" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 42.7/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 70.00%<br>         <b>🌡 Temperature:</b> 22.10 °C<br>         <b>⛰ Elevation:</b> 892.14 m<br>         <b>📐 Slope:</b> 34.69°     </div>     </div>`)[0];
+                popup_4231b836d6bd41679e152e6808d6ff5b.setContent(html_861c298c15661f5ade3c7788a3e0ea5b);
+            
+        
+
+        marker_9c2ff93727a2a918e0412437d877c299.bindPopup(popup_4231b836d6bd41679e152e6808d6ff5b)
+        ;
+
+        
+    
+    
+            marker_9c2ff93727a2a918e0412437d877c299.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 42.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d85c421f559df96c3dd8b38fb0efff51 = L.marker(
+                [12.55, 75.58],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_e877e69d83f1fc07e6686e4e9f9fb86c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd097bb08be5a7f8451b8e50d4942c45 = $(`<div id="html_bd097bb08be5a7f8451b8e50d4942c45" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 36.85/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 80.00%<br>         <b>🌡 Temperature:</b> 21.30 °C<br>         <b>⛰ Elevation:</b> 966.36 m<br>         <b>📐 Slope:</b> 22.22°     </div>     </div>`)[0];
+                popup_e877e69d83f1fc07e6686e4e9f9fb86c.setContent(html_bd097bb08be5a7f8451b8e50d4942c45);
+            
+        
+
+        marker_d85c421f559df96c3dd8b38fb0efff51.bindPopup(popup_e877e69d83f1fc07e6686e4e9f9fb86c)
+        ;
+
+        
+    
+    
+            marker_d85c421f559df96c3dd8b38fb0efff51.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 36.85
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9d4bc7175bc47868e6eb2355ae781198 = L.marker(
+                [12.0, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_ffa2d8ea72cfa6dda38c8d6e1ed1ac1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8963c10fe152aaca6069dbd6f8492db = $(`<div id="html_c8963c10fe152aaca6069dbd6f8492db" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 39.28/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 85.00%<br>         <b>🌡 Temperature:</b> 20.70 °C<br>         <b>⛰ Elevation:</b> 1056.07 m<br>         <b>📐 Slope:</b> 23.52°     </div>     </div>`)[0];
+                popup_ffa2d8ea72cfa6dda38c8d6e1ed1ac1e.setContent(html_c8963c10fe152aaca6069dbd6f8492db);
+            
+        
+
+        marker_9d4bc7175bc47868e6eb2355ae781198.bindPopup(popup_ffa2d8ea72cfa6dda38c8d6e1ed1ac1e)
+        ;
+
+        
+    
+    
+            marker_9d4bc7175bc47868e6eb2355ae781198.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 39.28
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_94a19d2d81e59e61c34446d9fe580fe5 = L.marker(
+                [12.05, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_80aebe54bb09ac8f14cf2d48a32eb32a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_383eeeefa44f876a9211d9882edf42cd = $(`<div id="html_383eeeefa44f876a9211d9882edf42cd" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 39.28/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 89.00%<br>         <b>🌡 Temperature:</b> 20.50 °C<br>         <b>⛰ Elevation:</b> 1385.18 m<br>         <b>📐 Slope:</b> 19.24°     </div>     </div>`)[0];
+                popup_80aebe54bb09ac8f14cf2d48a32eb32a.setContent(html_383eeeefa44f876a9211d9882edf42cd);
+            
+        
+
+        marker_94a19d2d81e59e61c34446d9fe580fe5.bindPopup(popup_80aebe54bb09ac8f14cf2d48a32eb32a)
+        ;
+
+        
+    
+    
+            marker_94a19d2d81e59e61c34446d9fe580fe5.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 39.28
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb9bc0e522aa1578b6199dee1552b9b7 = L.marker(
+                [12.1, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_917826d6800f43e1782ce04847e5034a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4189f82fa7c2848c400d6f34f0635f1f = $(`<div id="html_4189f82fa7c2848c400d6f34f0635f1f" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 22.76/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 85.00%<br>         <b>🌡 Temperature:</b> 21.80 °C<br>         <b>⛰ Elevation:</b> 799.67 m<br>         <b>📐 Slope:</b> 1.14°     </div>     </div>`)[0];
+                popup_917826d6800f43e1782ce04847e5034a.setContent(html_4189f82fa7c2848c400d6f34f0635f1f);
+            
+        
+
+        marker_cb9bc0e522aa1578b6199dee1552b9b7.bindPopup(popup_917826d6800f43e1782ce04847e5034a)
+        ;
+
+        
+    
+    
+            marker_cb9bc0e522aa1578b6199dee1552b9b7.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 22.76
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77ce30758486b454af1f8e6a032ca606 = L.marker(
+                [12.15, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_a5851e0100b1eb9b8e946f7aa260c027 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c2b51a79269c49e28dca87d02ede787 = $(`<div id="html_5c2b51a79269c49e28dca87d02ede787" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 25.2/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 75.00%<br>         <b>🌡 Temperature:</b> 23.80 °C<br>         <b>⛰ Elevation:</b> 1114.23 m<br>         <b>📐 Slope:</b> 4.86°     </div>     </div>`)[0];
+                popup_a5851e0100b1eb9b8e946f7aa260c027.setContent(html_5c2b51a79269c49e28dca87d02ede787);
+            
+        
+
+        marker_77ce30758486b454af1f8e6a032ca606.bindPopup(popup_a5851e0100b1eb9b8e946f7aa260c027)
+        ;
+
+        
+    
+    
+            marker_77ce30758486b454af1f8e6a032ca606.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 25.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_44a142ad176dacdd62442e58d66750bb = L.marker(
+                [12.2, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_956c707eda9f982e787b2452bc1024c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63c46a4c9ec48da45ef79c2764161ff0 = $(`<div id="html_63c46a4c9ec48da45ef79c2764161ff0" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 21.0/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 63.00%<br>         <b>🌡 Temperature:</b> 26.10 °C<br>         <b>⛰ Elevation:</b> 1192.41 m<br>         <b>📐 Slope:</b> 1.41°     </div>     </div>`)[0];
+                popup_956c707eda9f982e787b2452bc1024c1.setContent(html_63c46a4c9ec48da45ef79c2764161ff0);
+            
+        
+
+        marker_44a142ad176dacdd62442e58d66750bb.bindPopup(popup_956c707eda9f982e787b2452bc1024c1)
+        ;
+
+        
+    
+    
+            marker_44a142ad176dacdd62442e58d66750bb.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 21.0
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f1704d58aae590aa780f5560016e9c94 = L.marker(
+                [12.25, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_0e104566eea297e59cc993b2ff1d1a07 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d977efb1b94cb5fcfc8a96f8a917fd3d = $(`<div id="html_d977efb1b94cb5fcfc8a96f8a917fd3d" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 33.73/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 53.00%<br>         <b>🌡 Temperature:</b> 28.10 °C<br>         <b>⛰ Elevation:</b> 646.45 m<br>         <b>📐 Slope:</b> 28.64°     </div>     </div>`)[0];
+                popup_0e104566eea297e59cc993b2ff1d1a07.setContent(html_d977efb1b94cb5fcfc8a96f8a917fd3d);
+            
+        
+
+        marker_f1704d58aae590aa780f5560016e9c94.bindPopup(popup_0e104566eea297e59cc993b2ff1d1a07)
+        ;
+
+        
+    
+    
+            marker_f1704d58aae590aa780f5560016e9c94.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 33.73
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_715646f5d7b49533741f99b9af5c4822 = L.marker(
+                [12.3, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_c9c6659e5527e68475f209799acdff75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8dd97e3021c964b048c99db63fa55106 = $(`<div id="html_8dd97e3021c964b048c99db63fa55106" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 26.18/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 46.00%<br>         <b>🌡 Temperature:</b> 29.60 °C<br>         <b>⛰ Elevation:</b> 1207.54 m<br>         <b>📐 Slope:</b> 14.15°     </div>     </div>`)[0];
+                popup_c9c6659e5527e68475f209799acdff75.setContent(html_8dd97e3021c964b048c99db63fa55106);
+            
+        
+
+        marker_715646f5d7b49533741f99b9af5c4822.bindPopup(popup_c9c6659e5527e68475f209799acdff75)
+        ;
+
+        
+    
+    
+            marker_715646f5d7b49533741f99b9af5c4822.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 26.18
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2dfcdee88d1de8d344930a16862e3e70 = L.marker(
+                [12.35, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_966ead6b21f613ab5f9a322b5c599248 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ea8c066c0c4260a389989ced5a5deef = $(`<div id="html_5ea8c066c0c4260a389989ced5a5deef" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 29.07/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 45.00%<br>         <b>🌡 Temperature:</b> 29.70 °C<br>         <b>⛰ Elevation:</b> 770.52 m<br>         <b>📐 Slope:</b> 22.89°     </div>     </div>`)[0];
+                popup_966ead6b21f613ab5f9a322b5c599248.setContent(html_5ea8c066c0c4260a389989ced5a5deef);
+            
+        
+
+        marker_2dfcdee88d1de8d344930a16862e3e70.bindPopup(popup_966ead6b21f613ab5f9a322b5c599248)
+        ;
+
+        
+    
+    
+            marker_2dfcdee88d1de8d344930a16862e3e70.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 29.07
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec60107d82619e769d2e69a070820c15 = L.marker(
+                [12.4, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_f0d36f8752bcdfcc6ce178083eb51be7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63abfa91cb7239e31bd0cdf7a29366eb = $(`<div id="html_63abfa91cb7239e31bd0cdf7a29366eb" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 39.98/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 43.00%<br>         <b>🌡 Temperature:</b> 30.00 °C<br>         <b>⛰ Elevation:</b> 665.05 m<br>         <b>📐 Slope:</b> 40.84°     </div>     </div>`)[0];
+                popup_f0d36f8752bcdfcc6ce178083eb51be7.setContent(html_63abfa91cb7239e31bd0cdf7a29366eb);
+            
+        
+
+        marker_ec60107d82619e769d2e69a070820c15.bindPopup(popup_f0d36f8752bcdfcc6ce178083eb51be7)
+        ;
+
+        
+    
+    
+            marker_ec60107d82619e769d2e69a070820c15.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 39.98
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_79efb49d2cdc7a53ed7665175144d04e = L.marker(
+                [12.45, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_cfe5f75ad41acdb12f93d8990521136c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6081d24fa00a77e3d3fe0682e21c858 = $(`<div id="html_c6081d24fa00a77e3d3fe0682e21c858" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 25.56/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 42.00%<br>         <b>🌡 Temperature:</b> 30.10 °C<br>         <b>⛰ Elevation:</b> 1548.89 m<br>         <b>📐 Slope:</b> 11.22°     </div>     </div>`)[0];
+                popup_cfe5f75ad41acdb12f93d8990521136c.setContent(html_c6081d24fa00a77e3d3fe0682e21c858);
+            
+        
+
+        marker_79efb49d2cdc7a53ed7665175144d04e.bindPopup(popup_cfe5f75ad41acdb12f93d8990521136c)
+        ;
+
+        
+    
+    
+            marker_79efb49d2cdc7a53ed7665175144d04e.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 25.56
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd89f723d144bd8ddbc438de354b0e62 = L.marker(
+                [12.5, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_d9bb86e7eb5d2aee850d536c5ece89e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c48c36c00c854a6bf093131ee549f70d = $(`<div id="html_c48c36c00c854a6bf093131ee549f70d" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 30.7/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 43.00%<br>         <b>🌡 Temperature:</b> 29.80 °C<br>         <b>⛰ Elevation:</b> 1565.63 m<br>         <b>📐 Slope:</b> 18.47°     </div>     </div>`)[0];
+                popup_d9bb86e7eb5d2aee850d536c5ece89e2.setContent(html_c48c36c00c854a6bf093131ee549f70d);
+            
+        
+
+        marker_fd89f723d144bd8ddbc438de354b0e62.bindPopup(popup_d9bb86e7eb5d2aee850d536c5ece89e2)
+        ;
+
+        
+    
+    
+            marker_fd89f723d144bd8ddbc438de354b0e62.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 30.7
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3ebd5c6f700e355229bc558f9dea118a = L.marker(
+                [12.55, 75.66],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_31f66d5924ce65b8bac41421e5210185 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16bf8496b46c78042cb43fb725911c93 = $(`<div id="html_16bf8496b46c78042cb43fb725911c93" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 39.67/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 41.00%<br>         <b>🌡 Temperature:</b> 29.80 °C<br>         <b>⛰ Elevation:</b> 1408.40 m<br>         <b>📐 Slope:</b> 34.00°     </div>     </div>`)[0];
+                popup_31f66d5924ce65b8bac41421e5210185.setContent(html_16bf8496b46c78042cb43fb725911c93);
+            
+        
+
+        marker_3ebd5c6f700e355229bc558f9dea118a.bindPopup(popup_31f66d5924ce65b8bac41421e5210185)
+        ;
+
+        
+    
+    
+            marker_3ebd5c6f700e355229bc558f9dea118a.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 39.67
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_75d65d62497632cb2f0497323b8852fd = L.marker(
+                [12.0, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_389dc1c93f5ce56b16678a6731889a5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1762ac86c1f1560581f5762f96cf2936 = $(`<div id="html_1762ac86c1f1560581f5762f96cf2936" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 20.92/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 42.00%<br>         <b>🌡 Temperature:</b> 29.30 °C<br>         <b>⛰ Elevation:</b> 904.61 m<br>         <b>📐 Slope:</b> 10.30°     </div>     </div>`)[0];
+                popup_389dc1c93f5ce56b16678a6731889a5d.setContent(html_1762ac86c1f1560581f5762f96cf2936);
+            
+        
+
+        marker_75d65d62497632cb2f0497323b8852fd.bindPopup(popup_389dc1c93f5ce56b16678a6731889a5d)
+        ;
+
+        
+    
+    
+            marker_75d65d62497632cb2f0497323b8852fd.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 20.92
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_845ec0fc60f8ef0e3df10feeacf86d2b = L.marker(
+                [12.05, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_ce981256a0b5d2a9365a32a307a40642 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4edab7389aaaf59254023e628e3f6319 = $(`<div id="html_4edab7389aaaf59254023e628e3f6319" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 15.67/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 45.00%<br>         <b>🌡 Temperature:</b> 28.30 °C<br>         <b>⛰ Elevation:</b> 697.67 m<br>         <b>📐 Slope:</b> 3.46°     </div>     </div>`)[0];
+                popup_ce981256a0b5d2a9365a32a307a40642.setContent(html_4edab7389aaaf59254023e628e3f6319);
+            
+        
+
+        marker_845ec0fc60f8ef0e3df10feeacf86d2b.bindPopup(popup_ce981256a0b5d2a9365a32a307a40642)
+        ;
+
+        
+    
+    
+            marker_845ec0fc60f8ef0e3df10feeacf86d2b.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 15.67
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2a8eba88e9052bd788b3d48c24cf502f = L.marker(
+                [12.1, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_da5f87b9f6252d65ce20794335bf8a80 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b135005f1f9c066c37fdf74d2696f942 = $(`<div id="html_b135005f1f9c066c37fdf74d2696f942" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 26.72/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 50.00%<br>         <b>🌡 Temperature:</b> 27.90 °C<br>         <b>⛰ Elevation:</b> 1284.23 m<br>         <b>📐 Slope:</b> 13.04°     </div>     </div>`)[0];
+                popup_da5f87b9f6252d65ce20794335bf8a80.setContent(html_b135005f1f9c066c37fdf74d2696f942);
+            
+        
+
+        marker_2a8eba88e9052bd788b3d48c24cf502f.bindPopup(popup_da5f87b9f6252d65ce20794335bf8a80)
+        ;
+
+        
+    
+    
+            marker_2a8eba88e9052bd788b3d48c24cf502f.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 26.72
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_65763f163d73e58ed840801fc58d9876 = L.marker(
+                [12.15, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_31527ce8020ac69c03eb02b09b9c6854 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65e9af5a49db4db51a5edecbbff4c6f3 = $(`<div id="html_65e9af5a49db4db51a5edecbbff4c6f3" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 20.54/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 46.00%<br>         <b>🌡 Temperature:</b> 27.70 °C<br>         <b>⛰ Elevation:</b> 1040.15 m<br>         <b>📐 Slope:</b> 7.25°     </div>     </div>`)[0];
+                popup_31527ce8020ac69c03eb02b09b9c6854.setContent(html_65e9af5a49db4db51a5edecbbff4c6f3);
+            
+        
+
+        marker_65763f163d73e58ed840801fc58d9876.bindPopup(popup_31527ce8020ac69c03eb02b09b9c6854)
+        ;
+
+        
+    
+    
+            marker_65763f163d73e58ed840801fc58d9876.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 20.54
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89c60bf161b6156f13092d06c8d54ec1 = L.marker(
+                [12.2, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_39148c8af807054475a45179304b680b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d62d61285ab600a6a6fcc04f972cadd = $(`<div id="html_9d62d61285ab600a6a6fcc04f972cadd" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 42.6/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 51.00%<br>         <b>🌡 Temperature:</b> 26.50 °C<br>         <b>⛰ Elevation:</b> 722.04 m<br>         <b>📐 Slope:</b> 41.84°     </div>     </div>`)[0];
+                popup_39148c8af807054475a45179304b680b.setContent(html_9d62d61285ab600a6a6fcc04f972cadd);
+            
+        
+
+        marker_89c60bf161b6156f13092d06c8d54ec1.bindPopup(popup_39148c8af807054475a45179304b680b)
+        ;
+
+        
+    
+    
+            marker_89c60bf161b6156f13092d06c8d54ec1.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 42.6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eae11613f3b66f745ef8120bd4c5c370 = L.marker(
+                [12.25, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_77e0e0dc7fcfff12b2858b0c78394dfb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e665f1f1a5b73416e41a3ef87856cc4 = $(`<div id="html_7e665f1f1a5b73416e41a3ef87856cc4" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 42.89/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 59.00%<br>         <b>🌡 Temperature:</b> 24.60 °C<br>         <b>⛰ Elevation:</b> 1095.18 m<br>         <b>📐 Slope:</b> 36.37°     </div>     </div>`)[0];
+                popup_77e0e0dc7fcfff12b2858b0c78394dfb.setContent(html_7e665f1f1a5b73416e41a3ef87856cc4);
+            
+        
+
+        marker_eae11613f3b66f745ef8120bd4c5c370.bindPopup(popup_77e0e0dc7fcfff12b2858b0c78394dfb)
+        ;
+
+        
+    
+    
+            marker_eae11613f3b66f745ef8120bd4c5c370.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 42.89
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_28adf25dce018fe50627ac9a18b95870 = L.marker(
+                [12.3, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_ea3d862b86faaf9035f2f41d15319451 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab65350cd149b77c88b8da557861b2af = $(`<div id="html_ab65350cd149b77c88b8da557861b2af" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 35.97/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 65.00%<br>         <b>🌡 Temperature:</b> 23.50 °C<br>         <b>⛰ Elevation:</b> 634.39 m<br>         <b>📐 Slope:</b> 28.50°     </div>     </div>`)[0];
+                popup_ea3d862b86faaf9035f2f41d15319451.setContent(html_ab65350cd149b77c88b8da557861b2af);
+            
+        
+
+        marker_28adf25dce018fe50627ac9a18b95870.bindPopup(popup_ea3d862b86faaf9035f2f41d15319451)
+        ;
+
+        
+    
+    
+            marker_28adf25dce018fe50627ac9a18b95870.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 35.97
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9fa93720cb6df1fce518ab5208bcf70d = L.marker(
+                [12.35, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_b605ad09507f23f990bc5a38cf481f38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7eac4530c7b61949bb1db5180680e045 = $(`<div id="html_7eac4530c7b61949bb1db5180680e045" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 49.58/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 70.00%<br>         <b>🌡 Temperature:</b> 22.60 °C<br>         <b>⛰ Elevation:</b> 1509.32 m<br>         <b>📐 Slope:</b> 39.22°     </div>     </div>`)[0];
+                popup_b605ad09507f23f990bc5a38cf481f38.setContent(html_7eac4530c7b61949bb1db5180680e045);
+            
+        
+
+        marker_9fa93720cb6df1fce518ab5208bcf70d.bindPopup(popup_b605ad09507f23f990bc5a38cf481f38)
+        ;
+
+        
+    
+    
+            marker_9fa93720cb6df1fce518ab5208bcf70d.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 49.58
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1f8645ac2693bc6e596856fcd8c78b6e = L.marker(
+                [12.4, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_4432320dd4b8d267d456d970af2112d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02a22d0b91119d0edf58bf43d642488e = $(`<div id="html_02a22d0b91119d0edf58bf43d642488e" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 44.88/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 77.00%<br>         <b>🌡 Temperature:</b> 22.00 °C<br>         <b>⛰ Elevation:</b> 858.78 m<br>         <b>📐 Slope:</b> 36.17°     </div>     </div>`)[0];
+                popup_4432320dd4b8d267d456d970af2112d4.setContent(html_02a22d0b91119d0edf58bf43d642488e);
+            
+        
+
+        marker_1f8645ac2693bc6e596856fcd8c78b6e.bindPopup(popup_4432320dd4b8d267d456d970af2112d4)
+        ;
+
+        
+    
+    
+            marker_1f8645ac2693bc6e596856fcd8c78b6e.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 44.88
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b1cbf01dc03ccb5b4d1f092fe5a65551 = L.marker(
+                [12.45, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_b9304f92b05db799f39f5d3af4aea45f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a731d02076cb81ab18a6195d772ce61 = $(`<div id="html_1a731d02076cb81ab18a6195d772ce61" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 30.09/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 83.00%<br>         <b>🌡 Temperature:</b> 21.40 °C<br>         <b>⛰ Elevation:</b> 1262.52 m<br>         <b>📐 Slope:</b> 8.40°     </div>     </div>`)[0];
+                popup_b9304f92b05db799f39f5d3af4aea45f.setContent(html_1a731d02076cb81ab18a6195d772ce61);
+            
+        
+
+        marker_b1cbf01dc03ccb5b4d1f092fe5a65551.bindPopup(popup_b9304f92b05db799f39f5d3af4aea45f)
+        ;
+
+        
+    
+    
+            marker_b1cbf01dc03ccb5b4d1f092fe5a65551.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 30.09
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec5e2300be70755af76fff3b8e172967 = L.marker(
+                [12.5, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_3bb303e60439e037cfa5130145c0c4cd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2476819ab2c86214c156f345e0ad16ea = $(`<div id="html_2476819ab2c86214c156f345e0ad16ea" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 49.47/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 85.00%<br>         <b>🌡 Temperature:</b> 21.00 °C<br>         <b>⛰ Elevation:</b> 911.71 m<br>         <b>📐 Slope:</b> 40.17°     </div>     </div>`)[0];
+                popup_3bb303e60439e037cfa5130145c0c4cd.setContent(html_2476819ab2c86214c156f345e0ad16ea);
+            
+        
+
+        marker_ec5e2300be70755af76fff3b8e172967.bindPopup(popup_3bb303e60439e037cfa5130145c0c4cd)
+        ;
+
+        
+    
+    
+            marker_ec5e2300be70755af76fff3b8e172967.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 49.47
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_03cfffc9ed3f1c2c4535552f38de3fd3 = L.marker(
+                [12.55, 75.74],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_ca0ae9f8953ab15bc22f3738ecdb6fba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f06fee3efedf7f3e0f5037d48d837be = $(`<div id="html_7f06fee3efedf7f3e0f5037d48d837be" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 40.38/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 86.00%<br>         <b>🌡 Temperature:</b> 20.80 °C<br>         <b>⛰ Elevation:</b> 1120.07 m<br>         <b>📐 Slope:</b> 24.27°     </div>     </div>`)[0];
+                popup_ca0ae9f8953ab15bc22f3738ecdb6fba.setContent(html_7f06fee3efedf7f3e0f5037d48d837be);
+            
+        
+
+        marker_03cfffc9ed3f1c2c4535552f38de3fd3.bindPopup(popup_ca0ae9f8953ab15bc22f3738ecdb6fba)
+        ;
+
+        
+    
+    
+            marker_03cfffc9ed3f1c2c4535552f38de3fd3.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 40.38
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1da780769833e1f4e46a24c73da267cd = L.marker(
+                [12.0, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_c21075e82faf1c545c037ded5716c00d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1364daf460bd0983cd194c4d138ce383 = $(`<div id="html_1364daf460bd0983cd194c4d138ce383" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 48.59/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 86.00%<br>         <b>🌡 Temperature:</b> 20.50 °C<br>         <b>⛰ Elevation:</b> 1146.71 m<br>         <b>📐 Slope:</b> 36.33°     </div>     </div>`)[0];
+                popup_c21075e82faf1c545c037ded5716c00d.setContent(html_1364daf460bd0983cd194c4d138ce383);
+            
+        
+
+        marker_1da780769833e1f4e46a24c73da267cd.bindPopup(popup_c21075e82faf1c545c037ded5716c00d)
+        ;
+
+        
+    
+    
+            marker_1da780769833e1f4e46a24c73da267cd.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 48.59
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d9182f874a2d75861e272a8bc28d545a = L.marker(
+                [12.05, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_99874ef2068359377fe555557546ea26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_554a8971efdb5e5787a7409eb7c35b83 = $(`<div id="html_554a8971efdb5e5787a7409eb7c35b83" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 49.19/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 87.00%<br>         <b>🌡 Temperature:</b> 20.30 °C<br>         <b>⛰ Elevation:</b> 784.85 m<br>         <b>📐 Slope:</b> 40.32°     </div>     </div>`)[0];
+                popup_99874ef2068359377fe555557546ea26.setContent(html_554a8971efdb5e5787a7409eb7c35b83);
+            
+        
+
+        marker_d9182f874a2d75861e272a8bc28d545a.bindPopup(popup_99874ef2068359377fe555557546ea26)
+        ;
+
+        
+    
+    
+            marker_d9182f874a2d75861e272a8bc28d545a.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 49.19
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_381030673b33ce5978df3352c5484473 = L.marker(
+                [12.1, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_4ff89b2d2afb455119b809e3f13af80b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dfa4d1c3eecf72f8902079ce04101e3c = $(`<div id="html_dfa4d1c3eecf72f8902079ce04101e3c" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 35.35/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 80.00%<br>         <b>🌡 Temperature:</b> 21.60 °C<br>         <b>⛰ Elevation:</b> 1569.58 m<br>         <b>📐 Slope:</b> 14.31°     </div>     </div>`)[0];
+                popup_4ff89b2d2afb455119b809e3f13af80b.setContent(html_dfa4d1c3eecf72f8902079ce04101e3c);
+            
+        
+
+        marker_381030673b33ce5978df3352c5484473.bindPopup(popup_4ff89b2d2afb455119b809e3f13af80b)
+        ;
+
+        
+    
+    
+            marker_381030673b33ce5978df3352c5484473.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 35.35
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f62f8bb506445e3440402a3480fc2c4 = L.marker(
+                [12.15, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_9a794b4a581c2b1a39c74b5eee084e29 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_373b927efc039619a1759ce8bf7a88fb = $(`<div id="html_373b927efc039619a1759ce8bf7a88fb" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 25.9/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 70.00%<br>         <b>🌡 Temperature:</b> 23.70 °C<br>         <b>⛰ Elevation:</b> 1375.13 m<br>         <b>📐 Slope:</b> 4.95°     </div>     </div>`)[0];
+                popup_9a794b4a581c2b1a39c74b5eee084e29.setContent(html_373b927efc039619a1759ce8bf7a88fb);
+            
+        
+
+        marker_5f62f8bb506445e3440402a3480fc2c4.bindPopup(popup_9a794b4a581c2b1a39c74b5eee084e29)
+        ;
+
+        
+    
+    
+            marker_5f62f8bb506445e3440402a3480fc2c4.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 25.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_96c66bc285b17ebe374d71657d7c1e4c = L.marker(
+                [12.2, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_0f8894c6d57faad850a2361fc72fc08d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55949df2f3bdd6e5c1ae7a6d46c120da = $(`<div id="html_55949df2f3bdd6e5c1ae7a6d46c120da" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 27.86/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 57.00%<br>         <b>🌡 Temperature:</b> 26.30 °C<br>         <b>⛰ Elevation:</b> 1539.50 m<br>         <b>📐 Slope:</b> 10.26°     </div>     </div>`)[0];
+                popup_0f8894c6d57faad850a2361fc72fc08d.setContent(html_55949df2f3bdd6e5c1ae7a6d46c120da);
+            
+        
+
+        marker_96c66bc285b17ebe374d71657d7c1e4c.bindPopup(popup_0f8894c6d57faad850a2361fc72fc08d)
+        ;
+
+        
+    
+    
+            marker_96c66bc285b17ebe374d71657d7c1e4c.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 27.86
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b41a9e67827f89bd06eb0beb64f7b4f = L.marker(
+                [12.25, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_48ae00dd6ea80e3208130e4cbd1543d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e8deff2df49a0c5397dcdf564a94dc4 = $(`<div id="html_8e8deff2df49a0c5397dcdf564a94dc4" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 31.56/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 47.00%<br>         <b>🌡 Temperature:</b> 28.30 °C<br>         <b>⛰ Elevation:</b> 1494.83 m<br>         <b>📐 Slope:</b> 19.22°     </div>     </div>`)[0];
+                popup_48ae00dd6ea80e3208130e4cbd1543d0.setContent(html_8e8deff2df49a0c5397dcdf564a94dc4);
+            
+        
+
+        marker_0b41a9e67827f89bd06eb0beb64f7b4f.bindPopup(popup_48ae00dd6ea80e3208130e4cbd1543d0)
+        ;
+
+        
+    
+    
+            marker_0b41a9e67827f89bd06eb0beb64f7b4f.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 31.56
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_40a55ae8012b6c3d27dd2aa3ce3fd940 = L.marker(
+                [12.3, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_b01fd5bd5edf3b90bd3511c19cb816cc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c90c8c77bcf2259707135d05b92e2a87 = $(`<div id="html_c90c8c77bcf2259707135d05b92e2a87" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 40.43/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 42.00%<br>         <b>🌡 Temperature:</b> 30.00 °C<br>         <b>⛰ Elevation:</b> 1197.90 m<br>         <b>📐 Slope:</b> 36.81°     </div>     </div>`)[0];
+                popup_b01fd5bd5edf3b90bd3511c19cb816cc.setContent(html_c90c8c77bcf2259707135d05b92e2a87);
+            
+        
+
+        marker_40a55ae8012b6c3d27dd2aa3ce3fd940.bindPopup(popup_b01fd5bd5edf3b90bd3511c19cb816cc)
+        ;
+
+        
+    
+    
+            marker_40a55ae8012b6c3d27dd2aa3ce3fd940.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 40.43
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca0cc87a6a5eae787af424df6aadce22 = L.marker(
+                [12.35, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_9df4e32cee38bd5936073ae93e55bf38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7416bb2eb2331405290b7b7a0258a1e = $(`<div id="html_c7416bb2eb2331405290b7b7a0258a1e" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 42.93/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 38.00%<br>         <b>🌡 Temperature:</b> 31.30 °C<br>         <b>⛰ Elevation:</b> 1521.87 m<br>         <b>📐 Slope:</b> 38.73°     </div>     </div>`)[0];
+                popup_9df4e32cee38bd5936073ae93e55bf38.setContent(html_c7416bb2eb2331405290b7b7a0258a1e);
+            
+        
+
+        marker_ca0cc87a6a5eae787af424df6aadce22.bindPopup(popup_9df4e32cee38bd5936073ae93e55bf38)
+        ;
+
+        
+    
+    
+            marker_ca0cc87a6a5eae787af424df6aadce22.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 42.93
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_08c50e4cdbaeac249f124d706dc8a333 = L.marker(
+                [12.4, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_4c9d1a3076eadd330262820c3f76dcb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1f88b585b5726e95c3ad4b023c533fa3 = $(`<div id="html_1f88b585b5726e95c3ad4b023c533fa3" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 11.71/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 36.00%<br>         <b>🌡 Temperature:</b> 32.00 °C<br>         <b>⛰ Elevation:</b> 688.49 m<br>         <b>📐 Slope:</b> 0.31°     </div>     </div>`)[0];
+                popup_4c9d1a3076eadd330262820c3f76dcb3.setContent(html_1f88b585b5726e95c3ad4b023c533fa3);
+            
+        
+
+        marker_08c50e4cdbaeac249f124d706dc8a333.bindPopup(popup_4c9d1a3076eadd330262820c3f76dcb3)
+        ;
+
+        
+    
+    
+            marker_08c50e4cdbaeac249f124d706dc8a333.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 11.71
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a4000fe70c5ddd6a3a806dda3999513 = L.marker(
+                [12.45, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_69f9576e6f39b4b207c90b51371e33af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a2f563d37a609a42ce6f347a65352d1 = $(`<div id="html_7a2f563d37a609a42ce6f347a65352d1" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 27.3/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 35.00%<br>         <b>🌡 Temperature:</b> 32.00 °C<br>         <b>⛰ Elevation:</b> 795.98 m<br>         <b>📐 Slope:</b> 22.98°     </div>     </div>`)[0];
+                popup_69f9576e6f39b4b207c90b51371e33af.setContent(html_7a2f563d37a609a42ce6f347a65352d1);
+            
+        
+
+        marker_9a4000fe70c5ddd6a3a806dda3999513.bindPopup(popup_69f9576e6f39b4b207c90b51371e33af)
+        ;
+
+        
+    
+    
+            marker_9a4000fe70c5ddd6a3a806dda3999513.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 27.3
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a6c9648b97a848a36edb0e158efca7b = L.marker(
+                [12.5, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_7156bc4f93e2f19cfe9810b72f13e960 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_292a8e892c669b395f529c448679cdf7 = $(`<div id="html_292a8e892c669b395f529c448679cdf7" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 23.76/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 36.00%<br>         <b>🌡 Temperature:</b> 31.90 °C<br>         <b>⛰ Elevation:</b> 645.23 m<br>         <b>📐 Slope:</b> 18.78°     </div>     </div>`)[0];
+                popup_7156bc4f93e2f19cfe9810b72f13e960.setContent(html_292a8e892c669b395f529c448679cdf7);
+            
+        
+
+        marker_7a6c9648b97a848a36edb0e158efca7b.bindPopup(popup_7156bc4f93e2f19cfe9810b72f13e960)
+        ;
+
+        
+    
+    
+            marker_7a6c9648b97a848a36edb0e158efca7b.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 23.76
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_02e37b79dd2734d40db59360dc70d7ed = L.marker(
+                [12.55, 75.82],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_b4574e4bedb9a08aaeafb02a54fd7ab8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e146538e64073217f0004b1f3188ead = $(`<div id="html_1e146538e64073217f0004b1f3188ead" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 19.65/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 36.00%<br>         <b>🌡 Temperature:</b> 31.30 °C<br>         <b>⛰ Elevation:</b> 925.33 m<br>         <b>📐 Slope:</b> 9.99°     </div>     </div>`)[0];
+                popup_b4574e4bedb9a08aaeafb02a54fd7ab8.setContent(html_1e146538e64073217f0004b1f3188ead);
+            
+        
+
+        marker_02e37b79dd2734d40db59360dc70d7ed.bindPopup(popup_b4574e4bedb9a08aaeafb02a54fd7ab8)
+        ;
+
+        
+    
+    
+            marker_02e37b79dd2734d40db59360dc70d7ed.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 19.65
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_06fd52c5facabe0d923be4206e477c68 = L.marker(
+                [12.0, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_92a858d39fc78caf80adb182c544145f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e871a23ac14ddb05f1912d522304456a = $(`<div id="html_e871a23ac14ddb05f1912d522304456a" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 17.58/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 39.00%<br>         <b>🌡 Temperature:</b> 30.10 °C<br>         <b>⛰ Elevation:</b> 988.68 m<br>         <b>📐 Slope:</b> 5.39°     </div>     </div>`)[0];
+                popup_92a858d39fc78caf80adb182c544145f.setContent(html_e871a23ac14ddb05f1912d522304456a);
+            
+        
+
+        marker_06fd52c5facabe0d923be4206e477c68.bindPopup(popup_92a858d39fc78caf80adb182c544145f)
+        ;
+
+        
+    
+    
+            marker_06fd52c5facabe0d923be4206e477c68.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 17.58
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_afeb51c8ba63c773d3c6c4194fd3ec7f = L.marker(
+                [12.05, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_7a97b78fac87db1567d7728346d8ea87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc17436715bf33c31dfc22f3a14cfd8e = $(`<div id="html_dc17436715bf33c31dfc22f3a14cfd8e" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 23.77/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 41.00%<br>         <b>🌡 Temperature:</b> 29.00 °C<br>         <b>⛰ Elevation:</b> 871.35 m<br>         <b>📐 Slope:</b> 15.19°     </div>     </div>`)[0];
+                popup_7a97b78fac87db1567d7728346d8ea87.setContent(html_dc17436715bf33c31dfc22f3a14cfd8e);
+            
+        
+
+        marker_afeb51c8ba63c773d3c6c4194fd3ec7f.bindPopup(popup_7a97b78fac87db1567d7728346d8ea87)
+        ;
+
+        
+    
+    
+            marker_afeb51c8ba63c773d3c6c4194fd3ec7f.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 23.77
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f09c96160119699b4cec57827fee12df = L.marker(
+                [12.1, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_2c348b28050c4c3659b4558bfd0ee4c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82e3926e7242b7f6f875d7425ceda6a6 = $(`<div id="html_82e3926e7242b7f6f875d7425ceda6a6" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 45.42/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 41.00%<br>         <b>🌡 Temperature:</b> 28.80 °C<br>         <b>⛰ Elevation:</b> 1428.74 m<br>         <b>📐 Slope:</b> 42.43°     </div>     </div>`)[0];
+                popup_2c348b28050c4c3659b4558bfd0ee4c6.setContent(html_82e3926e7242b7f6f875d7425ceda6a6);
+            
+        
+
+        marker_f09c96160119699b4cec57827fee12df.bindPopup(popup_2c348b28050c4c3659b4558bfd0ee4c6)
+        ;
+
+        
+    
+    
+            marker_f09c96160119699b4cec57827fee12df.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 45.42
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6e23aca1dc371329bb84b614d632732e = L.marker(
+                [12.15, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_b7def3c7a545049eda08d2d323dd3b35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1d09d6faa04bc22dbfaa95604c97c63 = $(`<div id="html_e1d09d6faa04bc22dbfaa95604c97c63" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 23.88/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 41.00%<br>         <b>🌡 Temperature:</b> 28.60 °C<br>         <b>⛰ Elevation:</b> 956.75 m<br>         <b>📐 Slope:</b> 14.54°     </div>     </div>`)[0];
+                popup_b7def3c7a545049eda08d2d323dd3b35.setContent(html_e1d09d6faa04bc22dbfaa95604c97c63);
+            
+        
+
+        marker_6e23aca1dc371329bb84b614d632732e.bindPopup(popup_b7def3c7a545049eda08d2d323dd3b35)
+        ;
+
+        
+    
+    
+            marker_6e23aca1dc371329bb84b614d632732e.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 23.88
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_37cc17916e5c57e0023bef7138bce6e6 = L.marker(
+                [12.2, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_9008ae45e83791c1a4c4ad3ce10db630 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_724be721043cf7b19812af8c80cdd6c8 = $(`<div id="html_724be721043cf7b19812af8c80cdd6c8" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 29.07/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 40.00%<br>         <b>🌡 Temperature:</b> 28.80 °C<br>         <b>⛰ Elevation:</b> 880.93 m<br>         <b>📐 Slope:</b> 23.35°     </div>     </div>`)[0];
+                popup_9008ae45e83791c1a4c4ad3ce10db630.setContent(html_724be721043cf7b19812af8c80cdd6c8);
+            
+        
+
+        marker_37cc17916e5c57e0023bef7138bce6e6.bindPopup(popup_9008ae45e83791c1a4c4ad3ce10db630)
+        ;
+
+        
+    
+    
+            marker_37cc17916e5c57e0023bef7138bce6e6.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 29.07
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2188d2f886a66d9ccb6da97b68d47676 = L.marker(
+                [12.25, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_87b44b3c7ed07c1b8de1505b9211b31e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bddb88fd8b4fc026590c653ed488693 = $(`<div id="html_1bddb88fd8b4fc026590c653ed488693" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 37.43/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 46.00%<br>         <b>🌡 Temperature:</b> 27.20 °C<br>         <b>⛰ Elevation:</b> 1142.70 m<br>         <b>📐 Slope:</b> 31.64°     </div>     </div>`)[0];
+                popup_87b44b3c7ed07c1b8de1505b9211b31e.setContent(html_1bddb88fd8b4fc026590c653ed488693);
+            
+        
+
+        marker_2188d2f886a66d9ccb6da97b68d47676.bindPopup(popup_87b44b3c7ed07c1b8de1505b9211b31e)
+        ;
+
+        
+    
+    
+            marker_2188d2f886a66d9ccb6da97b68d47676.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 37.43
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a970e9d0355e75b4076f08a73ac30da = L.marker(
+                [12.3, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_c32797e8c8548ab3061cb925a7d67b19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2776d2ce44c7fd3d7f086f21af035d28 = $(`<div id="html_2776d2ce44c7fd3d7f086f21af035d28" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> LOW<br>         <b>Risk Score:</b> 29.34/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 69.00%<br>         <b>🌡 Temperature:</b> 24.90 °C<br>         <b>⛰ Elevation:</b> 740.92 m<br>         <b>📐 Slope:</b> 16.36°     </div>     </div>`)[0];
+                popup_c32797e8c8548ab3061cb925a7d67b19.setContent(html_2776d2ce44c7fd3d7f086f21af035d28);
+            
+        
+
+        marker_4a970e9d0355e75b4076f08a73ac30da.bindPopup(popup_c32797e8c8548ab3061cb925a7d67b19)
+        ;
+
+        
+    
+    
+            marker_4a970e9d0355e75b4076f08a73ac30da.bindTooltip(
+                `<div>
+                     LOW Risk | Score: 29.34
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0967ad149874de77ef01455a119ab3ee = L.marker(
+                [12.35, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_84a833d02068984af9d125bed9cf0493 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_961c746bfc80460d8c32e226f9c1362d = $(`<div id="html_961c746bfc80460d8c32e226f9c1362d" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 52.32/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 72.00%<br>         <b>🌡 Temperature:</b> 23.90 °C<br>         <b>⛰ Elevation:</b> 1402.20 m<br>         <b>📐 Slope:</b> 43.73°     </div>     </div>`)[0];
+                popup_84a833d02068984af9d125bed9cf0493.setContent(html_961c746bfc80460d8c32e226f9c1362d);
+            
+        
+
+        marker_0967ad149874de77ef01455a119ab3ee.bindPopup(popup_84a833d02068984af9d125bed9cf0493)
+        ;
+
+        
+    
+    
+            marker_0967ad149874de77ef01455a119ab3ee.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 52.32
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e2da6668eb87c0b8d34ddaa1620b2b20 = L.marker(
+                [12.4, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_83889aea78026658a4c493757018f778 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e46b57eb299d81fa0686f240926d020 = $(`<div id="html_2e46b57eb299d81fa0686f240926d020" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 48.09/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 75.00%<br>         <b>🌡 Temperature:</b> 23.20 °C<br>         <b>⛰ Elevation:</b> 674.55 m<br>         <b>📐 Slope:</b> 43.31°     </div>     </div>`)[0];
+                popup_83889aea78026658a4c493757018f778.setContent(html_2e46b57eb299d81fa0686f240926d020);
+            
+        
+
+        marker_e2da6668eb87c0b8d34ddaa1620b2b20.bindPopup(popup_83889aea78026658a4c493757018f778)
+        ;
+
+        
+    
+    
+            marker_e2da6668eb87c0b8d34ddaa1620b2b20.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 48.09
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9ca7241a461ec028e478f8373df420b0 = L.marker(
+                [12.45, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_14008e736c3de5332982d19c81781578 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e1bd92c90929f5ae91ab77d0d581ad8 = $(`<div id="html_6e1bd92c90929f5ae91ab77d0d581ad8" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 32.47/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 75.00%<br>         <b>🌡 Temperature:</b> 22.50 °C<br>         <b>⛰ Elevation:</b> 1586.89 m<br>         <b>📐 Slope:</b> 11.33°     </div>     </div>`)[0];
+                popup_14008e736c3de5332982d19c81781578.setContent(html_6e1bd92c90929f5ae91ab77d0d581ad8);
+            
+        
+
+        marker_9ca7241a461ec028e478f8373df420b0.bindPopup(popup_14008e736c3de5332982d19c81781578)
+        ;
+
+        
+    
+    
+            marker_9ca7241a461ec028e478f8373df420b0.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 32.47
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb46c6c39917d518b82f9331986c9ee3 = L.marker(
+                [12.5, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_4a822d83c36ca02000d3974ae062e2d8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38cdad0ed426d6ebca962cdf9944088e = $(`<div id="html_38cdad0ed426d6ebca962cdf9944088e" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 38.89/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 77.00%<br>         <b>🌡 Temperature:</b> 22.10 °C<br>         <b>⛰ Elevation:</b> 1372.24 m<br>         <b>📐 Slope:</b> 22.38°     </div>     </div>`)[0];
+                popup_4a822d83c36ca02000d3974ae062e2d8.setContent(html_38cdad0ed426d6ebca962cdf9944088e);
+            
+        
+
+        marker_cb46c6c39917d518b82f9331986c9ee3.bindPopup(popup_4a822d83c36ca02000d3974ae062e2d8)
+        ;
+
+        
+    
+    
+            marker_cb46c6c39917d518b82f9331986c9ee3.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 38.89
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_03f9d1508e87e095eaecba6b17815161 = L.marker(
+                [12.55, 75.9],
+                {
+}
+            ).addTo(map_a6bc2eced9f6a8db2629fa0d1ee73214);
+        
+    
+        var popup_85199afe457977322ceae5c890d1f6a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f8e99707ec635023388a1b3c6667ee53 = $(`<div id="html_f8e99707ec635023388a1b3c6667ee53" style="width: 100.0%; height: 100.0%;">     <div style="width:220px">         <h3>SafePath AI</h3>          <b>Risk Level:</b> MEDIUM<br>         <b>Risk Score:</b> 30.42/100<br><br>          <b>🌧 Rainfall:</b> 0.00 mm<br>         <b>💧 Humidity:</b> 82.00%<br>         <b>🌡 Temperature:</b> 21.80 °C<br>         <b>⛰ Elevation:</b> 798.72 m<br>         <b>📐 Slope:</b> 13.54°     </div>     </div>`)[0];
+                popup_85199afe457977322ceae5c890d1f6a5.setContent(html_f8e99707ec635023388a1b3c6667ee53);
+            
+        
+
+        marker_03f9d1508e87e095eaecba6b17815161.bindPopup(popup_85199afe457977322ceae5c890d1f6a5)
+        ;
+
+        
+    
+    
+            marker_03f9d1508e87e095eaecba6b17815161.bindTooltip(
+                `<div>
+                     MEDIUM Risk | Score: 30.42
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
